@@ -1,0 +1,134 @@
+.profile {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.profile__image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-position: center;
+}
+
+.profile__data {
+  display: grid;
+  padding-left: 22.5px;
+  grid-template-columns: minmax(auto, 373px) auto;
+  grid-template-areas: "name edit-button" "credential credential";
+  grid-gap: 16px 18px;
+  margin: 0;
+}
+
+.profile__name {
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: left;
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  grid-area: name;
+}
+
+.profile__edit-button {
+  background: url(../images/edit_button.svg);
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  grid-area: edit-button;
+  align-self: center;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.profile__edit-button:hover {
+  opacity: 60%;
+  transition: opacity 1s linear 0s;
+}
+
+.profile__credential {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  grid-area: credential;
+  margin: 0;
+}
+
+.profile__add-button {
+  margin-left: 165px;
+  background: url(../images/add-button.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 150px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.profile__add-button:hover {
+  opacity: 60%;
+  transition: opacity 1s linear 0s;
+}
+
+@media screen and (max-width: 1280px) {
+  .profile__data {
+    grid-template-columns: minmax(auto, 320px) auto;
+    grid-gap: 11px 13px;
+  }
+
+  .profile__name {
+    font-size: 30px;
+  }
+
+  .profile__credential {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile__data {
+    grid-template-columns: minmax(auto, 250px) auto;
+    grid-gap: 9px 11px;
+  }
+
+  .profile__name {
+    font-size: 25px;
+  }
+
+  .profile__add-button {
+    margin-left: 140px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .profile {
+    flex-direction: column;
+  }
+
+  .profile__data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .profile__name {
+    font-size: 22px;
+  }
+
+  .profile__credential {
+    font-size: 14px;
+  }
+
+  .profile__add-button {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
