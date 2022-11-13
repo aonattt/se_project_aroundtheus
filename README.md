@@ -16,7 +16,7 @@ To implement this project, the below web developer tools were used.
 
 **GitHub Pages**
 
-*[Link to the project on GitHub Pages](https://aonattt.github.io/se_project_aroundtheus/)
+* [Link to the project on GitHub Pages](https://aonattt.github.io/se_project_aroundtheus/)
 
 **GIFs**  
 
