@@ -14,6 +14,10 @@ To implement this project, the below web developer tools were used.
 
 * [Link to the project on Figma](https://www.figma.com/file/ii4xxsJ0ghevUOcssTlHZv/Sprint-3%3A-Around-the-US?node-id=0%3A1)  
 
+**GitHub Pages**
+
+* [Link to the project on GitHub Pages](https://aonattt.github.io/se_project_aroundtheus/)
+
 **GIFs**  
 
 The gifs below are to show how the website responses to the changing screen sizes.
